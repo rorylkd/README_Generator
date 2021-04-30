@@ -57,37 +57,77 @@ const questions = [
   
   ]
 
-  inquirer.prompt(questions).then((answers) => {
-    console.log(JSON.stringify(answers, null, '  '));
-    console.log(JSON.stringify((answers.title))); // Testing...needed to know how grab from the object
-  });
+  // inquirer.prompt(questions).then((answers) => {
+    // console.log(JSON.stringify(answers, null, 1));
+   // writeToFile('writetothisfile.md', answers);
+   // console.log(JSON.stringify((answers.title))); // Testing...needed to know how grab from the object
+//   });
 
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, answers) {
+   
     fs.appendFile(fileName, `
     # ${answers.title}
   
     ## Description
+
   ${answers.description}
+
     ## Installation
+
     ${answers.installation}
+
     ## Usage
+
     ${answers.usage}
+
     ## Credits
+
     ${answers.collaborators}
+
     ## License
+
     ${answers.license}
+
     ## How to Contribute
+
     ${answers.contribution}
+
     ## Tests
+
     ${answers.test}
+
     ## Questions
-    ${answers.username}
+
+    Please send any inquiries to:
+
+    Github:${answers.username}
     ${answers.email}
-    `);
+    `, 
+    (err) => {
+        if (err){
+    console.log('Error');
+    }
 
 }
+);}
+
+
+testAnswers = {
+    "title": "TotallyNotMadeUpApp",
+ "description": "This is an app that exists ;)",
+ "installation": "Press install",
+ "usage": "Used for lots of things...like...etc...",
+ "contribution": "Please do not contribute",
+ "test": "hahaha you think I write tests for these programs? god no",
+ "license": "idk probs MIT",
+ "username": "God",
+ "collaborators": "DJ Khaled",
+ "email": "hotmale@hotmail.com"
+};
+
+writeToFile('writetothisfile.md', testAnswers);
 
 // TODO: Create a function to initialize app
 function init() {}
