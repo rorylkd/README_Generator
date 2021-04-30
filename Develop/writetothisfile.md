@@ -1,7 +1,6 @@
+[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
-          [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
-
-# App
+# sfsdfsdfsdfsdfsdf
 
 ## Table of Contents
 1. [Description](#description)
@@ -16,36 +15,36 @@
   
 ## Description <a name="description"><a/>
 
-Does things
+sdfsdfsdfsdf
 
 ## Installation <a name="installation"><a/>
 
-adsa
+sdf
 
 ## Usage <a name="usage"><a/>
 
-asdasd
+sdf
 
 ## Credits <a name="credits"><a/>
 
-asdasd
+sdfsdfsdf
 
 ## License <a name="license"><a/>
 
-The Unlicense
+GNU Lesser General Public License v3.0
 
 ## Contribution Guidelines <a name="contributions"><a/>
 
-asdasd
+sdfsdfsdf
 
 ## Tests <a name="tests"><a/>
 
-asdasd
+sdfsdfsdf
 
 ## Questions <a name="contact"><a/>
 
 Please send any inquiries to:
 
-Github:asdasd
-asdasd
+Github:sdfsdfsdfsdf
+sdfsdfsdfsdf
     
