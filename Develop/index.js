@@ -1,37 +1,41 @@
 // TODO: Include packages needed for this application
+
+// Using inquirer for the prompts and filesystems to write to files.
 const inquirer = require('inquirer');
 const fs = require('fs');
-// TODO: Create an array of questions for user input
+
+// An array of questions for user input
+// These aren't all actually questions per se but whatever, they'll do.
 const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is your application called?',
+        message: 'Name of application:',
       },
     {
       type: 'input',
       name: 'description',
-      message: 'Please provide a description of your application.',
+      message: 'Description of application:',
     },
     {
       type: 'input',
       name: 'installation',
-      message: 'Please provide installation instructions for your application.',
+      message: 'Installation instructions for application:',
     },
     {
       type: 'input',
       name: 'usage',
-      message: 'Please provide usage information for your application.',
+      message: 'Usage information for application:',
     },
     {
         type: 'input',
         name: 'contribution',
-        message: 'Please provide contribution guidelines for your application.',
+        message: 'Contribution guidelines for your application:',
       },
       {
         type: 'input',
         name: 'test',
-        message: 'Please provide test instructions for your application.',
+        message: 'Test instructions for application:',
       },
       {
         type: 'list',
@@ -57,14 +61,16 @@ const questions = [
   
   ]
 
-  inquirer.prompt(questions).then((answers) => {
+//A promise that takes the inquirer prompts and returns an object with the answers given by the user.
+  inquirer.prompt(questions).then((answers) => {  
    // console.log(JSON.stringify(answers, null, ''));
    writeToFile('writetothisfile.md', answers);
   
   });
 
 
-// TODO: Create a function to write README file
+// This function atkes the answer object and dynamically generates a README file using pre-written markdown.
+// It'll write all this to the writetothisfile.md file.
 function writeToFile(fileName, answers) {
    
     fs.appendFile(fileName, `
@@ -124,24 +130,13 @@ ${answers.email}
 }
 );}
 
-
-// testAnswers = {
-//     "title": "TotallyNotMadeUpApp",
-//  "description": "This is an app that exists ;)",
-//  "installation": "Press install",
-//  "usage": "Used for lots of things...like...etc...",
-//  "contribution": "Please do not contribute",
-//  "test": "hahaha you think I write tests for these programs? god no",
-//  "license": "idk probs MIT",
-//  "username": "God",
-//  "collaborators": "DJ Khaled",
-//  "email": "hotmale@hotmail.com"
-// };
-
-//writeToFile('writetothisfile.md', testAnswers);
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+// We want the file we're writing to be start empty. 
+function init() {
+    fs.truncate('writetothisfile.md', 0, () => {
+        console.log('');
+    })
+    
+    }
+    
+    // Function call to initialize app
+    init();
