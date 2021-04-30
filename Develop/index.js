@@ -75,19 +75,94 @@ inquirer.prompt(questions).then((answers) => {
   writeToFile("writetothisfile.md", answers);
 });
 
+// // Links to the licensing agreement based on what choice the user makes
+// function renderLicenseLink(fileName, answers) {
+//   if (answers.license == "MIT License") {
+//     fs.appendFile(
+//       fileName,
+//       `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+//     );
+//   } else if (answers.license == "GNU Lesser General Public License v3.0") {
+//     fs.appendFile(
+//       fileName,
+//       `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`,
+
+//       (err) => {
+//         if (err) {
+//           console.log("Error");
+//         }
+//       }
+//     );
+//   } else if (answers.license == "Mozilla Public License 2.0") {
+//     fs.appendFile(
+//       fileName,
+//       `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`,
+//       (err) => {
+//         if (err) {
+//           console.log("Error");
+//         }
+//       }
+//     );
+//   } else if (answers.license == "GNU Affero General Public License v3.0") {
+//     fs.appendFile(
+//       fileName,
+//       `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0`,
+//       (err) => {
+//         if (err) {
+//           console.log("Error");
+//         }
+//       }
+//     );
+//   } else if (answers.license == "Unlicense") {
+//     fs.appendFile(
+//       fileName,
+//       `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`,
+//       (err) => {
+//         if (err) {
+//           console.log("Error");
+//         }
+//       }
+//     );
+//   } else if (answers.license == "Apache License 2.0") {
+//     fs.appendFile(
+//       fileName,
+//       `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`,
+//       (err) => {
+//         if (err) {
+//           console.log("Error");
+//         }
+//       }
+//     );
+//   } else if (answers.license == "GNU General Public License v3.0") {
+//     fs.appendFile(
+//       fileName,
+//       `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`,
+//       (err) => {
+//         if (err) {
+//           console.log("Error");
+//         }
+//       }
+//     );
+//   }
+// }
+
 //Links to a license badge depending on which choice the user makes.
 function renderLicenseBadge(fileName, answers) {
-  if (answers.license == "MIT") {
+  if (answers.license == "MIT License") {
     fs.appendFile(
       fileName,
-      `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+      `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
+      (err) => {
+        if (err) {
+          console.log("Error");
+        }
+      }
     );
   } else if (answers.license == "GNU Lesser General Public License v3.0") {
     fs.appendFile(
       fileName,
       `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`,
-
-      (err) => {
+        (err) => {
         if (err) {
           console.log("Error");
         }
@@ -97,7 +172,7 @@ function renderLicenseBadge(fileName, answers) {
     fs.appendFile(
       fileName,
       `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`,
-      (err) => {
+        (err) => {
         if (err) {
           console.log("Error");
         }
@@ -113,7 +188,7 @@ function renderLicenseBadge(fileName, answers) {
         }
       }
     );
-  } else if (answers.license == "The Unlicense") {
+  } else if (answers.license == "Unlicense") {
     fs.appendFile(
       fileName,
       `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`,
@@ -143,16 +218,6 @@ function renderLicenseBadge(fileName, answers) {
         }
       }
     );
-  } else {
-    fs.appendFile(
-        fileName,
-        '',
-        (err) => {
-          if (err) {
-            console.log("Error");
-          }
-        }
-      );  
   }
 }
 

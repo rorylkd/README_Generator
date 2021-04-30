@@ -1,6 +1,6 @@
-[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# sfsdfsdfsdfsdfsdf
+# sdfsdfdsf
 
 ## Table of Contents
 1. [Description](#description)
@@ -15,36 +15,36 @@
   
 ## Description <a name="description"><a/>
 
-sdfsdfsdfsdf
+sdfsdafsdaf
 
 ## Installation <a name="installation"><a/>
 
-sdf
+sadfsdfsdf
 
 ## Usage <a name="usage"><a/>
 
-sdf
+sdfsdfsdf
 
 ## Credits <a name="credits"><a/>
 
-sdfsdfsdf
+sadfsdfsdf
 
 ## License <a name="license"><a/>
 
-GNU Lesser General Public License v3.0
+sdfsdfdsf is licensed under the MIT License.
 
 ## Contribution Guidelines <a name="contributions"><a/>
 
-sdfsdfsdf
+sdsdfsdf
 
 ## Tests <a name="tests"><a/>
 
-sdfsdfsdf
+sdfsdfsdaf
 
 ## Questions <a name="contact"><a/>
 
 Please send any inquiries to:
 
-Github:sdfsdfsdfsdf
-sdfsdfsdfsdf
+Github:sdfsdfsdf
+sdfsadfsadf
     
