@@ -4,6 +4,11 @@ const fs = require('fs');
 // TODO: Create an array of questions for user input
 const questions = [
     {
+        type: 'input',
+        name: 'title',
+        message: 'What is your application called?',
+      },
+    {
       type: 'input',
       name: 'description',
       message: 'Please provide a description of your application.',
@@ -41,6 +46,11 @@ const questions = [
       },
       {
         type: 'input',
+        name: 'collaborators',
+        message: 'List any collaborators here:',
+      },
+      {
+        type: 'input',
         name: 'email',
         message: 'What is your email address?',
       }
@@ -49,10 +59,35 @@ const questions = [
 
   inquirer.prompt(questions).then((answers) => {
     console.log(JSON.stringify(answers, null, '  '));
+    console.log(JSON.stringify((answers.title))); // Testing...needed to know how grab from the object
   });
 
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, answers) {
+    fs.appendFile(fileName, `
+    # ${answers.title}
+  
+    ## Description
+  ${answers.description}
+    ## Installation
+    ${answers.installation}
+    ## Usage
+    ${answers.usage}
+    ## Credits
+    ${answers.collaborators}
+    ## License
+    ${answers.license}
+    ## How to Contribute
+    ${answers.contribution}
+    ## Tests
+    ${answers.test}
+    ## Questions
+    ${answers.username}
+    ${answers.email}
+    `);
+
+}
 
 // TODO: Create a function to initialize app
 function init() {}
