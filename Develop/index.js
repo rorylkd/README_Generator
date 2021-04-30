@@ -46,7 +46,7 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'collaborators',
+        name: 'credits',
         message: 'List any collaborators here:',
       },
       {
@@ -68,42 +68,53 @@ const questions = [
 function writeToFile(fileName, answers) {
    
     fs.appendFile(fileName, `
-    # ${answers.title}
+# ${answers.title}
+
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Collaborators](#collaborators)
+5. [License](#license)
+6. [Contributions](#contributions)
+7. [Tests](#tests)
+8. [Contact Info](#contact)
+
   
-    ## Description
+## Description <a name="description"><a/>
 
-  ${answers.description}
+${answers.description}
 
-    ## Installation
+## Installation <a name="installation"><a/>
 
-    ${answers.installation}
+${answers.installation}
 
-    ## Usage
+## Usage <a name="usage"><a/>
 
-    ${answers.usage}
+${answers.usage}
 
-    ## Credits
+## Credits <a name="credits"><a/>
 
-    ${answers.collaborators}
+${answers.collaborators}
 
-    ## License
+## License <a name="license"><a/>
 
-    ${answers.license}
+${answers.license}
 
-    ## How to Contribute
+## Contribution Guidelines <a name="contributions"><a/>
 
-    ${answers.contribution}
+${answers.contribution}
 
-    ## Tests
+## Tests <a name="tests"><a/>
 
-    ${answers.test}
+${answers.test}
 
-    ## Questions
+## Questions <a name="contact"><a/>
 
-    Please send any inquiries to:
+Please send any inquiries to:
 
-    Github:${answers.username}
-    ${answers.email}
+Github:${answers.username}
+${answers.email}
     `, 
     (err) => {
         if (err){
