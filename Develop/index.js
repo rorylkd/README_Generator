@@ -80,7 +80,7 @@ function writeToFile(fileName, answers) {
 1. [Description](#description)
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [Collaborators](#collaborators)
+4. [Credits](#credits)
 5. [License](#license)
 6. [Contributions](#contributions)
 7. [Tests](#tests)
@@ -101,7 +101,7 @@ ${answers.usage}
 
 ## Credits <a name="credits"><a/>
 
-${answers.collaborators}
+${answers.credits}
 
 ## License <a name="license"><a/>
 
