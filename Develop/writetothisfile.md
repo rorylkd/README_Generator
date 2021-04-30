@@ -1,36 +1,39 @@
 
-    # TotallyNotMadeUpApp
+    
+    # AppName
   
     ## Description
 
-  This is an app that exists ;)
+  It makes things and stuff
 
     ## Installation
 
-    Press install
+    press the install button and let jesus take the wheel
 
     ## Usage
 
-    Used for lots of things...like...etc...
+    Cannot be used
 
     ## Credits
 
-    DJ Khaled
+    God
 
     ## License
 
-    idk probs MIT
+    The Unlicense
 
     ## How to Contribute
 
-    Please do not contribute
+    Please fix it please
 
     ## Tests
 
-    hahaha you think I write tests for these programs? god no
+    No testes
 
     ## Questions
 
-    God
+    Please send any inquiries to:
+
+    Github:rorylkd
     hotmale@hotmail.com
     
