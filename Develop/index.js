@@ -72,79 +72,84 @@ const questions = [
 inquirer.prompt(questions).then((answers) => {
   // console.log(JSON.stringify(answers, null, ''));
   renderLicenseBadge("writetothisfile.md", answers);
+  renderLicenseLink("writetothisfile.md", answers);
   writeToFile("writetothisfile.md", answers);
 });
 
-// // Links to the licensing agreement based on what choice the user makes
-// function renderLicenseLink(fileName, answers) {
-//   if (answers.license == "MIT License") {
-//     fs.appendFile(
-//       fileName,
-//       `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-//     );
-//   } else if (answers.license == "GNU Lesser General Public License v3.0") {
-//     fs.appendFile(
-//       fileName,
-//       `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`,
-
-//       (err) => {
-//         if (err) {
-//           console.log("Error");
-//         }
-//       }
-//     );
-//   } else if (answers.license == "Mozilla Public License 2.0") {
-//     fs.appendFile(
-//       fileName,
-//       `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`,
-//       (err) => {
-//         if (err) {
-//           console.log("Error");
-//         }
-//       }
-//     );
-//   } else if (answers.license == "GNU Affero General Public License v3.0") {
-//     fs.appendFile(
-//       fileName,
-//       `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0`,
-//       (err) => {
-//         if (err) {
-//           console.log("Error");
-//         }
-//       }
-//     );
-//   } else if (answers.license == "Unlicense") {
-//     fs.appendFile(
-//       fileName,
-//       `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`,
-//       (err) => {
-//         if (err) {
-//           console.log("Error");
-//         }
-//       }
-//     );
-//   } else if (answers.license == "Apache License 2.0") {
-//     fs.appendFile(
-//       fileName,
-//       `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`,
-//       (err) => {
-//         if (err) {
-//           console.log("Error");
-//         }
-//       }
-//     );
-//   } else if (answers.license == "GNU General Public License v3.0") {
-//     fs.appendFile(
-//       fileName,
-//       `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`,
-//       (err) => {
-//         if (err) {
-//           console.log("Error");
-//         }
-//       }
-//     );
-//   }
-// }
+// Links to the licensing agreement based on what choice the user makes
+function renderLicenseLink(fileName, answers) {
+  if (answers.license == "MIT License") {
+    fs.appendFile(
+      fileName,
+      `[MIT License](https://choosealicense.com/licenses/mit/)`,
+      (err) => {
+        if (err) {
+          console.log("Error");
+        }
+      }
+    );
+  } else if (answers.license == "GNU Lesser General Public License v3.0") {
+    fs.appendFile(
+      fileName,
+      `[GNU Lesser General Public License v3.0](https://choosealicense.com/licenses/lgpl-3.0/)`,
+      (err) => {
+        if (err) {
+          console.log("Error");
+        }
+      }
+    );
+  } else if (answers.license == "Mozilla Public License 2.0") {
+    fs.appendFile(
+      fileName,
+      `[Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)`,
+      (err) => {
+        if (err) {
+          console.log("Error");
+        }
+      }
+    );
+  } else if (answers.license == "GNU Affero General Public License v3.0") {
+    fs.appendFile(
+      fileName,
+      `[GNU Affero General Public License v3.0](https://choosealicense.com/licenses/agpl-3.0/)`,
+      (err) => {
+        if (err) {
+          console.log("Error");
+        }
+      }
+    );
+  } else if (answers.license == "Unlicense") {
+    fs.appendFile(
+      fileName,
+      `[The Unlicense](https://choosealicense.com/licenses/unlicense/)`,
+      (err) => {
+        if (err) {
+          console.log("Error");
+        }
+      }
+    );
+  } else if (answers.license == "Apache License 2.0") {
+    fs.appendFile(
+      fileName,
+      `[Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)`,
+      (err) => {
+        if (err) {
+          console.log("Error");
+        }
+      }
+    );
+  } else if (answers.license == "GNU General Public License v3.0") {
+    fs.appendFile(
+      fileName,
+      `[GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)`,
+      (err) => {
+        if (err) {
+          console.log("Error");
+        }
+      }
+    );
+  }
+}
 
 //Links to a license badge depending on which choice the user makes.
 function renderLicenseBadge(fileName, answers) {
@@ -162,7 +167,7 @@ function renderLicenseBadge(fileName, answers) {
     fs.appendFile(
       fileName,
       `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`,
-        (err) => {
+      (err) => {
         if (err) {
           console.log("Error");
         }
@@ -172,7 +177,7 @@ function renderLicenseBadge(fileName, answers) {
     fs.appendFile(
       fileName,
       `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`,
-        (err) => {
+      (err) => {
         if (err) {
           console.log("Error");
         }
