@@ -42,11 +42,11 @@ const questions = [
     name: "license",
     message: "Which license would you like your application to be covered by?",
     choices: [
-      "MIT",
+      "MIT License",
       "GNU Lesser General Public License v3.0",
       "Mozilla Public License 2.0",
       "GNU Affero General Public License v3.0",
-      "The Unlicense",
+      "Unlicense",
       "Apache License 2.0",
       "GNU General Public License v3.0",
     ],
@@ -184,7 +184,7 @@ ${answers.credits}
 
 ## License <a name="license"><a/>
 
-${answers.license}
+${answers.title} is licensed under the ${answers.license}.
 
 ## Contribution Guidelines <a name="contributions"><a/>
 
