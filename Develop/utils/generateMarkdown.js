@@ -1,10 +1,10 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+function renderLicenseBadge(license) {
   if (answer.license == "MIT") {
     fs.appendFile(
       fileName,
@@ -47,7 +47,8 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+// Kinda did this in the writeToFile function...i don't know why you'd seperate them. Please explain.
+
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -55,3 +56,6 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+
+// Why would I create a seperate module for four functions? I'm deleting this file later, so don't worry about it's contents at the moment. 
+// The same functions will be included in the index.js file.

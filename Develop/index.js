@@ -71,12 +71,12 @@ const questions = [
 //A promise that takes the inquirer prompts and returns an object with the answers given by the user.
 inquirer.prompt(questions).then((answers) => {
   // console.log(JSON.stringify(answers, null, ''));
-  renderLicenseLink("writetothisfile.md", answers);
+  renderLicenseBadge("writetothisfile.md", answers);
   writeToFile("writetothisfile.md", answers);
 });
 
 //Links to a license badge depending on which choice the user makes.
-function renderLicenseLink(fileName, answers) {
+function renderLicenseBadge(fileName, answers) {
   if (answers.license == "MIT") {
     fs.appendFile(
       fileName,
@@ -143,10 +143,20 @@ function renderLicenseLink(fileName, answers) {
         }
       }
     );
+  } else {
+    fs.appendFile(
+        fileName,
+        '',
+        (err) => {
+          if (err) {
+            console.log("Error");
+          }
+        }
+      );  
   }
 }
 
-// This function atkes the answer object and dynamically generates a README file using pre-written markdown.
+// This function takes the answer object and dynamically generates a README file using pre-written markdown.
 // It'll write all this to the writetothisfile.md file.
 function writeToFile(fileName, answers) {
   fs.appendFile(
