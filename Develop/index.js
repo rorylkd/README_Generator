@@ -81,7 +81,7 @@ function renderLicenseLink(fileName, answers) {
   if (answers.license == "MIT License") {
     fs.appendFile(
       fileName,
-      `[MIT License](https://choosealicense.com/licenses/mit/)`,
+      `\n[MIT License](https://choosealicense.com/licenses/mit/)`,
       (err) => {
         if (err) {
           console.log("Error");
@@ -91,7 +91,7 @@ function renderLicenseLink(fileName, answers) {
   } else if (answers.license == "GNU Lesser General Public License v3.0") {
     fs.appendFile(
       fileName,
-      `[GNU Lesser General Public License v3.0](https://choosealicense.com/licenses/lgpl-3.0/)`,
+      `\n[GNU Lesser General Public License v3.0](https://choosealicense.com/licenses/lgpl-3.0/)`,
       (err) => {
         if (err) {
           console.log("Error");
@@ -101,7 +101,7 @@ function renderLicenseLink(fileName, answers) {
   } else if (answers.license == "Mozilla Public License 2.0") {
     fs.appendFile(
       fileName,
-      `[Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)`,
+      `\n[Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)`,
       (err) => {
         if (err) {
           console.log("Error");
@@ -111,7 +111,7 @@ function renderLicenseLink(fileName, answers) {
   } else if (answers.license == "GNU Affero General Public License v3.0") {
     fs.appendFile(
       fileName,
-      `[GNU Affero General Public License v3.0](https://choosealicense.com/licenses/agpl-3.0/)`,
+      `\n[GNU Affero General Public License v3.0](https://choosealicense.com/licenses/agpl-3.0/)`,
       (err) => {
         if (err) {
           console.log("Error");
@@ -121,7 +121,7 @@ function renderLicenseLink(fileName, answers) {
   } else if (answers.license == "Unlicense") {
     fs.appendFile(
       fileName,
-      `[The Unlicense](https://choosealicense.com/licenses/unlicense/)`,
+      `\n[The Unlicense](https://choosealicense.com/licenses/unlicense/)`,
       (err) => {
         if (err) {
           console.log("Error");
@@ -131,7 +131,7 @@ function renderLicenseLink(fileName, answers) {
   } else if (answers.license == "Apache License 2.0") {
     fs.appendFile(
       fileName,
-      `[Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)`,
+      `\n[Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)`,
       (err) => {
         if (err) {
           console.log("Error");
@@ -141,7 +141,7 @@ function renderLicenseLink(fileName, answers) {
   } else if (answers.license == "GNU General Public License v3.0") {
     fs.appendFile(
       fileName,
-      `[GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)`,
+      `\n[GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)`,
       (err) => {
         if (err) {
           console.log("Error");
