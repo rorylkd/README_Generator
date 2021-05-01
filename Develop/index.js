@@ -1,5 +1,3 @@
-// TODO: Include packages needed for this application
-
 // Using inquirer for the prompts and filesystems to write to files.
 const inquirer = require("inquirer");
 const fs = require("fs");
@@ -69,14 +67,15 @@ const questions = [
 ];
 
 //A promise that takes the inquirer prompts and returns an object with the answers given by the user.
+// The badge and link for the license is generated at the top of the new file.
 inquirer.prompt(questions).then((answers) => {
-  // console.log(JSON.stringify(answers, null, ''));
+  
   renderLicenseBadge("writetothisfile.md", answers);
   renderLicenseLink("writetothisfile.md", answers);
   writeToFile("writetothisfile.md", answers);
 });
 
-// Links to the licensing agreement based on what choice the user makes
+// Writes a link to the licensing agreement based on what choice the user makes.
 function renderLicenseLink(fileName, answers) {
   if (answers.license == "MIT License") {
     fs.appendFile(
@@ -151,7 +150,7 @@ function renderLicenseLink(fileName, answers) {
   }
 }
 
-//Links to a license badge depending on which choice the user makes.
+//Writes a license badge img to the file depending on which choice the user makes.
 function renderLicenseBadge(fileName, answers) {
   if (answers.license == "MIT License") {
     fs.appendFile(
@@ -290,6 +289,7 @@ ${answers.email}
 }
 
 // We want the file we're writing to be start empty.
+// Truncating the file to zero sets it as empty.
 function init() {
   fs.truncate("writetothisfile.md", 0, () => {
     console.log("");
