@@ -1,7 +1,7 @@
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[MIT License](https://choosealicense.com/licenses/mit/)
 
-# App
+# README Generator
 
 ## Table of Contents
 1. [Description](#description)
@@ -16,36 +16,36 @@
   
 ## Description <a name="description"><a/>
 
-dfdfdsf
+This application accepts user input from the command line and dynamically generates a high quality README.md file. This README includes the applications title, description, installation and usage information, tests, and a table of contents. It also includes a link to whichever license the user selected as well as a badge for that license. Contact information for the user is given under the "Questions" heading. 
 
 ## Installation <a name="installation"><a/>
 
-dsfdsfvdfv
+Users must have the inquirer module installed in order to use this application, as well as node.js. The application is run on the command line by typing "node index.js".
 
 ## Usage <a name="usage"><a/>
 
-dfvdfvdfv
+Once the user starts the application they are presented with a series of prompts. Once these are answered the information will be written to "writetothisfile.md".
 
 ## Credits <a name="credits"><a/>
 
-45645645646
+Badges generated using lukas-h/license-badges.md application.
 
 ## License <a name="license"><a/>
 
-App is licensed under the Apache License 2.0.
+README Generator is licensed under the MIT License.
 
 ## Contribution Guidelines <a name="contributions"><a/>
 
-dfvdfvdfv
+Feel free to email me if you wish to contribute!
 
 ## Tests <a name="tests"><a/>
 
-kj,jh,jk,jk,jk,jh,jk,j,
+There are currently no tests written for this application, as I'm lazy.
 
 ## Questions <a name="contact"><a/>
 
 Please send any inquiries to:
 
-Github:dsfvdsfvdfvdfv4353456456
-5464356
+Github:rorylkd
+rory.donaldson14@gmail.com
     
