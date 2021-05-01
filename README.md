@@ -49,3 +49,7 @@ Please send any inquiries to:
 Github:rorylkd
 rory.donaldson14@gmail.com
 
+## Screenshots
+
+You're looking at it!
+This README was generated using the README_Generator application (except for this section).
