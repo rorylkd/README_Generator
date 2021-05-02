@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [MIT License](https://choosealicense.com/licenses/mit/)
 
-# README Generator
+# README Generator Test
 
 ## Table of Contents
 1. [Description](#description)
@@ -16,31 +16,31 @@
   
 ## Description <a name="description"><a/>
 
-This application accepts user input from the command line and dynamically generates a high quality README.md file. This README includes the applications title, description, installation and usage information, tests, and a table of contents. It also includes a link to whichever license the user selected as well as a badge for that license. Contact information for the user is given under the "Questions" heading. 
+Description goes here
 
 ## Installation <a name="installation"><a/>
 
-Users must have the inquirer module installed in order to use this application, as well as node.js. The application is run on the command line by typing "node index.js".
+Installation instructions go here
 
 ## Usage <a name="usage"><a/>
 
-Once the user starts the application they are presented with a series of prompts. Once these are answered the information will be written to "writetothisfile.md".
+Usage info goes here
 
 ## Credits <a name="credits"><a/>
 
-Badges generated using lukas-h/license-badges.md application.
+None
 
 ## License <a name="license"><a/>
 
-README Generator is licensed under the MIT License.
+README Generator Test is licensed under the MIT License.
 
 ## Contribution Guidelines <a name="contributions"><a/>
 
-Feel free to email me if you wish to contribute!
+Contribution guidelines go here
 
 ## Tests <a name="tests"><a/>
 
-There are currently no tests written for this application, as I'm lazy.
+Test instructions go here
 
 ## Questions <a name="contact"><a/>
 
